@@ -1,3 +1,6 @@
+# Experiment 3: Cracking SHA-256 hashes with a dictionary attack
+# "The System Breaker" series, Part 1 - Joaquin Thiogo
+
 import hashlib
 
 

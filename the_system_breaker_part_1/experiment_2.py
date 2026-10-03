@@ -1,3 +1,6 @@
+# Experiment 2: Hashing passwords with SHA-256
+# "The System Breaker" series, Part 1 - Joaquin Thiogo
+
 import hashlib
 
 

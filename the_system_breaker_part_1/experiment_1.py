@@ -1,3 +1,6 @@
+# Experiment 1: Base64 is encoding, not protection
+# "The System Breaker" series, Part 1 - Joaquin Thiogo
+
 import base64
 
 
