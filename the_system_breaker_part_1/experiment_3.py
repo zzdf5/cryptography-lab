@@ -25,7 +25,7 @@ def print_table(headers: list, rows: list) -> None:
     print(line)
 
 
-# The leaked database from Experiment 2
+# the leaked database from Experiment 2
 leaked_database = {
     "alice": "e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446",
     "bob": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
@@ -33,7 +33,7 @@ leaked_database = {
     "dave": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
 }
 
-# A small list of commonly used passwords
+# a wordlist of commonly used passwords
 wordlist = ["123456", "qwerty", "password", "admin", "user123", "abc123!"]
 
 print(f"Loaded {len(leaked_database)} password hashes (SHA-256)")

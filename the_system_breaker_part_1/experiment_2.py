@@ -36,7 +36,7 @@ users = {
     "dave": "password"
 }
 
-# Registration: only the hash is stored
+# registration: only the hash is stored
 database = {}
 for user, pw in users.items():
     database[user] = hash_password(pw)
@@ -47,7 +47,7 @@ for user, stored in database.items():
     rows.append([user, stored])
 print_table(["username", "password_hash"], rows)
 
-# Login: the typed password is hashed and compared
+# login: the typed password is hashed and compared
 print("\n=== Login attempts ===")
 attempts = [("bob", "password"), ("bob", "Password")]
 rows = []
