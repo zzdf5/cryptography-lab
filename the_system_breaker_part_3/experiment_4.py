@@ -2,6 +2,7 @@
 # "The System Breaker" series, Part 3 - Joaquin Thiogo
 
 def search_space(C: int, L: int) -> int:
+    # total number of possibilities
     return C ** L
 
 
@@ -15,6 +16,7 @@ def fmt_space(C: int, L: int) -> str:
 
 
 def time_to_exhaust(C: int, L: int, R: float) -> str:
+    # estimate time to sweep the whole space at R candidates per second
     N = search_space(C, L)
     seconds = N / R
     years = seconds / (365.25 * 24 * 3600)
@@ -28,12 +30,13 @@ def time_to_exhaust(C: int, L: int, R: float) -> str:
 
 R = 1e18
 
+# (name, C, L)
 systems = [
-    ("Caesar",                  26,   1),
-    ("Multiplicative cipher",   12,   1),
-    ("Vigenere, 7-letter key",  26,   7),
-    ("RSA n = 10403, factor n", 101,  1),
-    ("AES-128",                 2,  128),
+    ("Caesar", 26, 1),
+    ("Multiplicative cipher", 12, 1),
+    ("Vigenere, 7-letter key", 26, 7),
+    ("RSA n = 10403, factor n", 101, 1),
+    ("AES-128", 2, 128),
 ]
 
 COL1 = 25
